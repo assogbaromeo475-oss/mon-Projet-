@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GLOCK MP3</title>
+
+    <link rel="stylesheet" href="Etape 02.css">
+</head>
+
+<body>
+
+    <!-- ANIMATION -->
+    <div id="snow-loader">
+
+        <div class="snowman snowman1">☃</div>
+        <div class="snowman snowman2">☃</div>
+        <div class="snowman snowman3">☃</div>
+
+        <h1>GLOCK MP3</h1>
+        <p>Chargement...</p>
+
+    </div>
+
+
+    <!-- CONTENU PRINCIPAL -->
+    <div id="main-content">
+
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+                Glock MP3
+            </div>
+
+        </header>
+
+
+        <!-- ACCUEIL -->
+        <section class="hero">
+
+            <h1>Bienvenue sur Glock MP3</h1>
+
+            <p>
+                Télécharge tes sons préférés
+            </p>
+
+        </section>
+
+
+        <!-- BIBLIOTHÈQUE -->
+        <section id="library">
+
+            <div class="library-header">
+                <h2>Bibliothèque Musicale</h2>
+                <input type="search" id="searchInput" placeholder="Rechercher une musique" class="search-input">
+            </div>
+
+            <div class="music-container" id="musicContainer">
+
+                <div class="music-card">
+
+                    <h3>Demo Song 1</h3>
+
+                    <audio controls>
+                        <source src="songs/demo1.mp3" type="audio/mp3">
+                    </audio>
+
+                    <a href="songs/demo1.mp3" download>
+                        Télécharger
+                    </a>
+
+                </div>
+
+
+                <div class="music-card">
+
+                    <h3>Demo Song 2</h3>
+
+                    <audio controls>
+                        <source src="songs/demo2.mp3" type="audio/mp3">
+                    </audio>
+
+                    <a href="songs/demo2.mp3" download>
+                        Télécharger
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AJOUT -->
+        <section id="upload">
+
+            <h2>Ajouter un son</h2>
+
+            <div class="upload-box">
+
+                <input type="file" id="audioUpload" accept="audio/*">
+
+                <button onclick="uploadMusic()">
+                    Ajouter la musique
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <h2>À propos</h2>
+
+            <p>
+                Glock MP3 est une plateforme moderne de téléchargement musical.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <form>
+
+                <input type="text" placeholder="Votre nom">
+
+                <input type="email" placeholder="Votre email">
+
+                <textarea placeholder="Votre message"></textarea>
+
+                <button type="submit">
+                    Envoyer
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © 2026 Glock MP3
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="Etape 03.js"></script>
+
+</body>
+
+</html>
